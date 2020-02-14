@@ -10,6 +10,10 @@ This will allow you to edit HTML easily with help of TinyMCE 5 and a lot of widg
 
 ## How to run
 
+Install all required modules into ```node_modules``` by running the command:
+
+    npm ci
+
 Now to run it type in console:     
     
     npm run start
@@ -25,7 +29,8 @@ You can do the same when creating your own app.
 Console commands:
 
     npm install -g create-react-app
-    create-react-app n1ed-react-example
+    create-react-app n1ed-react-example --use-npm
     cd n1ed-react-example
     npm i --save @edsdk/n1ed-react
    
+Then content of ```src/App.js``` file was modified to include N1ED editor into the application.

@@ -1,9 +1,9 @@
 import React from 'react';
-import {N1ED} from "@edsdk/n1ed-react";
+import {N1ED} from '@edsdk/n1ed-react';
 
 class App extends React.Component {
 
-    handleEditorChange = (content, editor) => {
+    handleEditorChange(content, editor) {
         console.log('Content was updated:', content);
     };
 
