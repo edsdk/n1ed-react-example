@@ -12,6 +12,19 @@ class App extends React.Component {
             apiKey="REACDFLT"
             initialValue="<p>N1ED react demo</p>"
             onEditorChange={this.handleEditorChange}
+
+            init={{
+                height: 500,
+                toolbar: 'undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | outdent indent | myCustomToolbarButton',
+                setup: (editor) => {
+                    console.log("TinyMCE initialized");
+                    editor.ui.registry.addButton('myCustomToolbarButton', {
+                        text: 'My Custom Button',
+                        onAction: () => alert('Custom button clicked!'),
+                    });
+                },
+            }}
+
         />;
     }
 }
