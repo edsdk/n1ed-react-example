@@ -1,5 +1,6 @@
 import React from 'react';
 import {N1ED} from '@edsdk/n1ed-react';
+import "./App.css";
 
 class App extends React.Component {
 
@@ -9,7 +10,7 @@ class App extends React.Component {
 
     render() {
         return <N1ED
-            apiKey="REACDFLT"
+            apiKey="REACN1ED" // later you will change it with your own API key
             initialValue="<p>N1ED react demo</p>"
             onEditorChange={this.handleEditorChange}
 
