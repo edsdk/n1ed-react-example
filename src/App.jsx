@@ -10,7 +10,7 @@ class App extends React.Component {
 
     render() {
         return <N1ED
-            apiKey="REACN1ED" // later you will change it with your own API key
+            apiKey="N1ED24RR" // later you will change it with your own API key
             initialValue="<p>N1ED react demo</p>"
             onEditorChange={this.handleEditorChange}
 
